@@ -1,0 +1,11 @@
+interface:
+  display_name: "XPlanner Content Manager"
+  short_description: "Manage ideas, drafts, and publishing in XPlanner"
+  default_prompt: "Use $xplanner to turn my saved ideas into platform-specific drafts and plan them in XPlanner."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "xplanner"
+      description: "XPlanner MCP for content context, ideas, posts, media, scheduling, and publishing"
+      transport: "streamable_http"
+      url: "https://mcp.xplanner.co/mcp"

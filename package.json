@@ -1,0 +1,11 @@
+{
+  "name": "xplanner-agent-skills",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/verify-skill.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
