@@ -1,6 +1,7 @@
 # XPlanner Agent Skills
 
 [![Validate agent skill](https://github.com/Sooler-Studio/xplanner-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/Sooler-Studio/xplanner-agent-skills/actions/workflows/validate.yml)
+[![skills.sh](https://skills.sh/b/Sooler-Studio/xplanner-agent-skills)](https://skills.sh/Sooler-Studio/xplanner-agent-skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Official agent skills for operating an XPlanner content workspace from compatible AI agents.
