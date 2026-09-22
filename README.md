@@ -1,5 +1,8 @@
 # XPlanner Agent Skills
 
+[![Validate agent skill](https://github.com/Sooler-Studio/xplanner-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/Sooler-Studio/xplanner-agent-skills/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Official agent skills for operating an XPlanner content workspace from compatible AI agents.
 
 The `$xplanner` skill teaches an agent how to discover the correct Workspace and Social Set, work from saved ideas, create platform-specific drafts for X, LinkedIn, and Threads, manage media, plan posts, and preserve user control over publishing and deletion.
