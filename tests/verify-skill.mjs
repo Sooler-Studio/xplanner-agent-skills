@@ -16,6 +16,7 @@ const openai = read("skills/xplanner/agents/openai.yaml");
 const readme = read("README.md");
 
 const expectedTools = [
+  "xplanner_archive_idea",
   "xplanner_cancel_post",
   "xplanner_convert_idea_to_post",
   "xplanner_create_folder",
@@ -28,6 +29,7 @@ const expectedTools = [
   "xplanner_delete_post",
   "xplanner_get_folder",
   "xplanner_get_idea",
+  "xplanner_get_media_download_url",
   "xplanner_get_platform_capabilities",
   "xplanner_get_post",
   "xplanner_get_usage",
@@ -39,7 +41,10 @@ const expectedTools = [
   "xplanner_list_social_sets",
   "xplanner_list_workspaces",
   "xplanner_publish_post",
+  "xplanner_reconcile_post_target",
   "xplanner_register_media_asset",
+  "xplanner_set_post_target_winner",
+  "xplanner_unarchive_idea",
   "xplanner_update_folder",
   "xplanner_update_idea",
   "xplanner_update_post",

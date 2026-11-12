@@ -39,7 +39,7 @@ There is no atomic batch tool.
 
 1. Resolve Workspace, Social Set, and Social Account targets.
 2. Read platform capabilities.
-3. Prepare common copy plus per-platform overrides.
+3. Prepare common copy plus per-platform overrides. For Facebook, use a connected Page. For Instagram, check the professional account type and media requirements for feed, carousel, Reel, or Story; Story text is an internal note. For YouTube Shorts, verify the channel grants upload access and obtain the explicit title, description, visibility, made-for-kids status, and synthetic media declaration.
 4. Create a draft first.
 5. If scheduling was requested, update the verified draft with an ISO 8601 `scheduledAt` value and the appropriate scheduled status.
 6. Retrieve the final post and report the localized date, timezone, targets, and state.
@@ -56,10 +56,10 @@ When the date is vague and a wrong day or timezone would matter, ask before muta
 ## Publish Now
 
 1. Require an explicit current-turn instruction to publish the exact post now.
-2. Retrieve the post and verify its Workspace, Social Set, platform targets, copy, and media.
+2. Retrieve the post and verify its Workspace, Social Set, platform targets, copy, media, and any review or provider requirements.
 3. If the user asked to create and publish new content, create it as a draft first; do not use `mode: "publish_now"` as the shortcut.
 4. Use `xplanner_publish_post` for the verified post.
-5. Re-read the post and report queued/published/failed state exactly. Do not blindly retry an uncertain result.
+5. Re-read the post and report queued/published/failed state exactly. Do not blindly retry an uncertain result. If reconciliation is requested, independently check the exact provider target, then record only that evidence through `xplanner_reconcile_post_target`.
 
 Scheduling is not authorization for immediate publishing.
 

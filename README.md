@@ -6,7 +6,7 @@
 
 Official agent skills for operating an XPlanner content workspace from compatible AI agents.
 
-The `$xplanner` skill teaches an agent how to discover the correct Workspace and Social Set, work from saved ideas, create platform-specific drafts for X, LinkedIn, and Threads, manage media, plan posts, and preserve user control over publishing and deletion.
+The `$xplanner` skill teaches an agent how to discover the correct Workspace and Social Set, work from saved ideas, create platform-specific drafts for X, LinkedIn, Threads, Facebook Pages, professional Instagram accounts, and YouTube Shorts, manage media, plan posts, and preserve user control over publishing and deletion.
 
 Real account actions run through the [XPlanner remote MCP server](https://mcp.xplanner.co/mcp) and OAuth. This repository does not ship a separate XPlanner CLI and does not store API keys.
 
@@ -39,7 +39,8 @@ Complete the XPlanner OAuth flow when your client asks you to sign in. See the [
 ## Example Requests
 
 - “Show me the ideas saved for this Workspace.”
-- “Turn these three ideas into distinct X, LinkedIn, and Threads drafts.”
+- “Turn these ideas into distinct X and LinkedIn drafts.”
+- “Prepare this video as an Instagram Reel and YouTube Short. Keep both as drafts and ask me for the YouTube visibility and audience settings.”
 - “Find open days next week and schedule the approved drafts.”
 - “Prepare the next two weeks for both brands, but keep everything as drafts.”
 
@@ -71,7 +72,7 @@ skills/
 npm test
 ```
 
-The verifier checks the canonical skill name, remote MCP endpoint, current 27-tool contract, safety boundaries, and repository installation instructions.
+The verifier checks the canonical skill name, remote MCP endpoint, 32 general-purpose production tools, safety boundaries, and repository installation instructions.
 
 Learn more at [XPlanner for AI Agents](https://xplanner.co/en/ai-agents).
 
